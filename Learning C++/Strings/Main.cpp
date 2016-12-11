@@ -10,6 +10,10 @@ int main()
 
 	cout << "Enter string 1:\t";
 	cin >> s1;
+	/*
+	* To read a line of string as input, use
+	* getline(cin, s1);
+	*/
 	cout << "Enter string 2:\t";
 	cin >> s2;
 	// Functions "compare" and "lexicographic_compare" are definced in another file.
