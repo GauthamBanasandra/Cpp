@@ -10,6 +10,7 @@ using namespace std;
 vector<string> generate_strings(unsigned int m, unsigned int n)
 {
 	// Initializing the seed.
+	// TODO: Figure out how to call this only once eventhough the method gets called multiple times.
 	srand((unsigned)time(NULL));
 	vector<string> str_vec;
 	
@@ -28,7 +29,7 @@ string rand_string(unsigned int m)
 	return rand_str;
 }
 
-// TODO: sort doesn't work across functions. Figure out why.
+// TODO: sort doesn't work across files. Figure out why.
 void sort_strings(vector<string> str_vec)
 {
 	sort(begin(str_vec), end(str_vec));
