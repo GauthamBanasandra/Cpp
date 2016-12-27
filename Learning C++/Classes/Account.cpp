@@ -32,11 +32,6 @@ bool Account::Withdraw(int amount)
 	return false;
 }
 
-int Account::GetBalance()
-{
-	return balance;
-}
-
 vector<string> Account::Report()
 {
 	return trans_manager.Report();
