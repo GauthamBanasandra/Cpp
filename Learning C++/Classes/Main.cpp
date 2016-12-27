@@ -16,7 +16,7 @@ int main()
 	for (int i = 0; i < num_trans; i++)
 	{
 		cin >> trans >> val;
-		if (trans == "d")
+		if (trans == "d")		
 			a1.Deposit(val) ? cout << "Success" << endl : cout << "Failure" << endl;
 		else if (trans == "w")
 			a1.Withdraw(val) ? cout << "Success" << endl : cout << "Failure" << endl;
