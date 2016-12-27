@@ -21,6 +21,12 @@ void TransactionsManager::AddTransaction(string type, int value)
 	// push_back() method is analogous to append() in python.
 	// Note that you don't use the "new" keyword to create a new instance.
 	transactions.push_back(Transaction(type, value));
+	/*
+	* Note - Instantiation for a class with attributes must be done like this -
+	* Transaction t('Deposit', 100);
+	* Don't do - Transaction t = Transaction('Deposit', 100);
+	* The above line is valid but it's not usually done.
+	*/
 }
 
 void TransactionsManager::AddTransaction(Transaction transaction)
