@@ -6,7 +6,8 @@ TransactionsManager::TransactionsManager(int id) :account_id(id)
 {
 }
 
-vector<string> TransactionsManager::Report()
+// Constant function (const) is a function that doesn't alter any of the member variables.
+vector<string> TransactionsManager::Report() const
 {
 	vector<string> report;
 	// Use the to_string() method to convert to string.

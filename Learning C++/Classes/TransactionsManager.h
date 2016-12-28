@@ -8,7 +8,8 @@ private:
 	std::vector<Transaction> transactions;
 public:
 	TransactionsManager(int);
-	std::vector<std::string> Report();
+	// Constant function (const) is a function that doesn't alter any of the member variables.
+	std::vector<std::string> Report() const;
 	void AddTransaction(std::string, int);
 	void AddTransaction(Transaction);
 	~TransactionsManager();
