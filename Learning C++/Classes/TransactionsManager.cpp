@@ -30,7 +30,7 @@ void TransactionsManager::AddTransaction(string type, int value)
 	*/
 }
 
-void TransactionsManager::AddTransaction(Transaction transaction)
+void TransactionsManager::AddTransaction(const Transaction& transaction)
 {
 	transactions.push_back(transaction);
 }
