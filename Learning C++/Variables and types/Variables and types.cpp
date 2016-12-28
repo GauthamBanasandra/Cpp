@@ -26,5 +26,10 @@ int main()
 	*/
 	float k = 9 / 5;
 	cout << "The value of k is " << k << endl;
+
+	// Use static_cast<type> to cast. Check out other casts that are available - dynamic_cast etc.
+	int x = static_cast<int>(12.1);
+	cout << "The value of x is " << x << endl;
+
 	return 0;
 }
