@@ -17,7 +17,7 @@ int main()
 	for (int i = 0; i < num_trans; i++)
 	{
 		cin >> trans >> val;
-		if (trans == "d")		
+		if (trans == "d")
 			a1.Deposit(val) ? cout << "Success" << endl : cout << "Failure" << endl;
 		else if (trans == "w")
 			a1.Withdraw(val) ? cout << "Success" << endl : cout << "Failure" << endl;
@@ -32,6 +32,7 @@ int main()
 
 	Transaction t("Deposit", 50);
 	cout << "Doubling the value:" << endl;
+	// Note that parameters are passed in the same way (without any references).
 	TryDoubling_val(t);
 	cout << "By passing value:\t" << t.GetTransaction() << endl;
 	TryDoubling_ref(t);
