@@ -147,12 +147,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Account.h" />
+    <ClInclude Include="Param pass.h" />
     <ClInclude Include="Transaction.h" />
     <ClInclude Include="TransactionsManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Account.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Parameter passing.cpp" />
     <ClCompile Include="Transaction.cpp" />
     <ClCompile Include="TransactionsManager.cpp" />
   </ItemGroup>

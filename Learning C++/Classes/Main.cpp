@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Account.h"
+#include "Param pass.h"
 
 using namespace std;
 
@@ -28,6 +29,13 @@ int main()
 	for (auto line : a1.Report())
 		cout << line << endl;
 	cout << "Balance:\t" << a1.GetBalance() << endl;
+
+	Transaction t("Deposit", 50);
+	cout << "Doubling the value:" << endl;
+	TryDoubling_val(t);
+	cout << "By passing value:\t" << t.GetTransaction() << endl;
+	TryDoubling_ref(t);
+	cout << "By passing reference:\t" << t.GetTransaction() << endl;
 
 	return 0;
 }
