@@ -9,7 +9,7 @@ private:
 	int value;
 public:
 	Transaction(std::string, int);
-	void DoubleValue();
-	std::string GetTransaction();
+	void DoubleValue() { value *= 2; };
+	std::string GetTransaction() const;
 	~Transaction();
 };
