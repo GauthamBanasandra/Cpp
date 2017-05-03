@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "Person.h"
+#include "Accumulator.h"
 
 // Declare a template.
 // 'T' is the placeholder for any kind of class (including primitive types).
@@ -16,6 +17,18 @@ int main()
 	Person p2(20, "Jack");
 
 	std::cout << "max(Tom, Jack) is " << max(p1, p2).name << std::endl;
+	// Doesn't work for primitive types. Find out why
+	 //std::cout << "max of 1, 2 is " << max(1, 2) << std::endl;
+
+	Accumulator<int> integer_acc(0);
+	integer_acc += 1;
+	integer_acc += 5;
+	std::cout << "integer accumulator total:\t" << integer_acc.GetTotal() << std::endl;
+
+	Accumulator<std::string> string_acc("");
+	string_acc += "hello ";
+	string_acc += "world";
+	std::cout << "string accumulator concantenation:\t" << string_acc.GetTotal() << std::endl;
 
 	return 0;
 }
