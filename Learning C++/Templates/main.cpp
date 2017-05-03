@@ -20,15 +20,23 @@ int main()
 	// Doesn't work for primitive types. Find out why
 	 //std::cout << "max of 1, 2 is " << max(1, 2) << std::endl;
 
+	// Accumulator for int.
 	Accumulator<int> integer_acc(0);
 	integer_acc += 1;
 	integer_acc += 5;
 	std::cout << "integer accumulator total:\t" << integer_acc.GetTotal() << std::endl;
 
+	// Accumulator for string.
 	Accumulator<std::string> string_acc("");
 	string_acc += "hello ";
 	string_acc += "world";
 	std::cout << "string accumulator concantenation:\t" << string_acc.GetTotal() << std::endl;
+
+	// Accumulator for Person - through template specialization.
+	Accumulator<Person> people(0);
+	people += p1;
+	people += p2;
+	std::cout << "sum of ages of Tom and Jack:\t" << people.GetTotal() << std::endl;
 
 	return 0;
 }
