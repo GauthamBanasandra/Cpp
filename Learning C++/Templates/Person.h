@@ -15,7 +15,8 @@ private:
 	int age;
 public:
 	std::string name;
-	int GetAge();
+	// Need to make the function const if the method doesn't modify the member variables.
+	int GetAge() const;
 };
 
 #pragma once

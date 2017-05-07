@@ -11,11 +11,11 @@ vector<string> generate_strings(unsigned int m, unsigned int n)
 {
 	// Initializing the seed.
 	// TODO: Figure out how to call this only once eventhough the method gets called multiple times.
-	srand((unsigned)time(NULL));
+	srand(static_cast<unsigned>(time(nullptr)));
 	vector<string> str_vec;
-	
+
 	// Use push_back() to append to the list.
-	for (register unsigned int i = 0; i < n; str_vec.push_back(rand_string(m)), i++);
+	for (unsigned int i = 0; i < n; str_vec.push_back(rand_string(m)), i++);
 	
 	return str_vec;
 }
@@ -24,7 +24,7 @@ string rand_string(unsigned int m)
 {	
 	string rand_str;
 	// Using rand() to generate random numbers.
-	for (register unsigned int j = 0; j < m; rand_str += rand() % 25 + 65, j++);
+	for (unsigned int j = 0; j < m; rand_str += rand() % 25 + 65, j++);
 	
 	return rand_str;
 }

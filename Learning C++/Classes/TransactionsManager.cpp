@@ -1,4 +1,5 @@
 #include "TransactionsManager.h"
+#include <string>
 
 using namespace std;
 

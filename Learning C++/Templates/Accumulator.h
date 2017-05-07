@@ -23,8 +23,7 @@ private:
 	int total;	// Notice that there's no generic variable in this class.
 public:
 	Accumulator(int initial_value) :total(initial_value) {}
-	int GetTotal() const { return total; }
-	// For operator overloading of primitive types (like int, double etc.), the argument must be a constant pointer.
+	int GetTotal() const { return total; }	
 	void operator+=(Person &t) { total += t.GetAge(); }
 	virtual ~Accumulator() {}
 };

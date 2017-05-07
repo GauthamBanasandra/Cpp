@@ -17,8 +17,7 @@ int lexicographic_comparison(string x, string y)
 	// Comparison operators perform lexicographic comparison for strings.
 	if (x < y)
 		return -1;
-	else if (x == y)
+	if (x == y)
 		return 0;
-	else
-		return 1;
+	return 1;
 }

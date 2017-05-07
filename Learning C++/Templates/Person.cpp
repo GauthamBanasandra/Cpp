@@ -26,7 +26,7 @@ Person::~Person()
 }
 
 
-int Person::GetAge()
+int Person::GetAge() const
 {
 	return age;
 }
