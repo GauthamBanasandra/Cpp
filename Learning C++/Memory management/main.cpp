@@ -1,4 +1,5 @@
 #include "PersonTemplate.h"
+#include "PersonTemplateSmartPtr.h"
 
 int main()
 {
@@ -13,5 +14,15 @@ int main()
 	// Overload for '=' gets called.
 	p1 = p2;
 	
+	PersonTemplateSmartPtr p1shr("John", "Maverick", 1234);
+	p1shr.AddResource();
+	p1shr.SetFirstName("Jack");
+	p1shr.AddResource();
+
+	PersonTemplateSmartPtr p2shr = p1shr;
+	p1shr = p2shr;
+
+	// Accessing a shared pointer is just like accessing a normal pointer through * and ->.
+
 	return 0;
 }
