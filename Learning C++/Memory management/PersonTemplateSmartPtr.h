@@ -26,6 +26,8 @@ public:
 	void setId(int _id) { id = _id; }
 
 	void AddResource();
+	// Accessing a shared pointer is just like accessing a normal pointer through * and ->.
+	std::string GetResource() const { return resource->GetResource(); }
 	~PersonTemplateSmartPtr();
 };
 

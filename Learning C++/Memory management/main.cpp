@@ -22,7 +22,8 @@ int main()
 	PersonTemplateSmartPtr p2shr = p1shr;
 	p1shr = p2shr;
 
-	// Accessing a shared pointer is just like accessing a normal pointer through * and ->.
+	// Accessing the resource through shared_ptr.
+	std::string resource_name = p1shr.GetResource();
 
 	return 0;
 }
