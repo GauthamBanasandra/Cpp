@@ -10,11 +10,12 @@ public:
 	bool operator<(Person &);
 	// Invokes for "person1 < 200"
 	bool operator<(int);
-	~Person();
+	virtual ~Person() {};
+	virtual std::string GetName() const { return name; }
 private:
 	int age;
-public:
 	std::string name;
+public:
 	int GetAge();
 };
 

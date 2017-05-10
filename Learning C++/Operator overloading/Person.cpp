@@ -21,10 +21,6 @@ bool Person::operator<(int _age)
 	return age < _age;
 }
 
-Person::~Person()
-{
-}
-
 
 int Person::GetAge()
 {
