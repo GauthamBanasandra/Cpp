@@ -2,7 +2,7 @@
 #include <string>
 #include "Person.h"
 
-int main(int argc, char* argv[])
+int main(char* argv[])
 {
 	int num = 4;
 	// Pointer to num.

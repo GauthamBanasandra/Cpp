@@ -19,7 +19,7 @@ int main()
 	Person &myselfRef = me;
 	std::cout << "ref - name:\t" << myselfRef.GetName() << std::endl;
 
-	// Inheritence with shared_ptd.
+	// Polymorphism with shared_ptd.
 	// LHS should have parent class and RHS should have the child class type.
 	std::shared_ptr<Person> s_me = std::make_shared<Twitterati>("Jack", "@captain_jack", 12);
 	// Since 'GetName()' function is marked as virutal, it will call GetName() of sub class.
