@@ -1,5 +1,5 @@
 #include <iostream>
-// Declare the namespace being used to avoing qualifying each method call from this namespace.
+// Declare the namespace being used to avoid qualifying each method call from this namespace.
 using namespace std;
 
 int main()
