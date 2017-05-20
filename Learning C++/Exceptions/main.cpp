@@ -22,8 +22,9 @@ void exception_throw()
 
 		int number = numbers.at(99);
 	}
-	catch (std::out_of_range &e)
+	catch (std::out_of_range &e) // Catching an 'out of range' exception.
 	{
+		// e.what() contains the message.
 		std::cout << e.what() << std::endl;
 	}
 }

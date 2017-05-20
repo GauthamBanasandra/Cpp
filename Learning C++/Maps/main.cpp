@@ -28,7 +28,7 @@ int main()
 
 	// Using find() on map.
 	auto found = peopleMap.find(123);
-	// find() always returns an iterator - so that it is consister across other collection data-structures (like vector).
+	// find() always returns an iterator - so that it is consistent across other collection data-structures (like vector).
 	std::cout << "Results of find()" << std::endl;
 	std::cout << "Name:\t" << found->first << "\tAge:\t" << found->second.GetName() << std::endl;
 

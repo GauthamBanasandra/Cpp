@@ -1,9 +1,19 @@
 #include <iostream>
+#include <vector>
+
 // Declare the namespace being used to avoid qualifying each method call from this namespace.
 using namespace std;
 
 int main()
 {
+	std::vector<int> numbers1;
+	// 'decltype' is used to identify the type of a given variable.
+	// Here, we're declaring the variable 'numbers2' by determining the type of numbers1.
+	// This is useful when dealing with templates, where we don't know the type during compile time.
+	decltype(numbers1) numbers2;
+	numbers2.push_back(1);
+	std::cout << "Type of 'numbers2':\t" << typeid(decltype(numbers2)).name() << std::endl;
+
 	// 'auto' is just like 'var' in C# and Javascript.
 	auto i = 4;
 	i++;

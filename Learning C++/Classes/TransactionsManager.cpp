@@ -25,8 +25,8 @@ void TransactionsManager::AddTransaction(string type, int value)
 	transactions.push_back(Transaction(type, value));
 	/*
 	* Note - Instantiation for a class with attributes must be done like this -
-	* Transaction t('Deposit', 100);
-	* Don't do - Transaction t = Transaction('Deposit', 100);
+	* Transaction t("Deposit", 100);
+	* Don't do - Transaction t = Transaction("Deposit", 100);
 	* The above line is valid but it's not usually done.
 	*/
 }
