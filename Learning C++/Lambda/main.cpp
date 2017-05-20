@@ -4,6 +4,8 @@
 #include <algorithm>
 #include <iostream>
 
+void lambda_store();
+
 int main(int argc, char* argv[])
 {
 	srand(static_cast<unsigned>(time(nullptr)));
@@ -92,5 +94,8 @@ int main(int argc, char* argv[])
 
 	// Even the capture clause could be reference. e.g. [&x, &y]. Any change to x and y will be reflected in the calling scope.
 	// To capture the references of all the variables in the stack, use [&] as the capture clause.
+
+	lambda_store();
+
 	return 0;
 }
